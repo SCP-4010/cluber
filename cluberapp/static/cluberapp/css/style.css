@@ -1,0 +1,198 @@
+@font-face {
+   font-family: 'oswald-medium';
+   src: url('/static/fonts/Oswald-Medium.ttf')
+}
+
+body {
+   font-family: 'oswald-medium';
+   background: url('/static/images/bggeneral.jpg');
+
+   background-size: cover;
+   background-repeat: repeat;
+
+}
+
+* {
+   outline: none;
+   box-sizing: border-box;
+}
+
+.box {
+   vertical-align: middle;
+   background: rgba(22, 14, 39, 0.671);
+   height: 1200px;
+   width: 1200px;
+   margin: auto;
+   margin-top: 30px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: top;
+   border:solid white;
+}
+
+.box2 {
+margin-right: 10%;
+color: rgb(141, 140, 140);
+
+}
+.video{
+  width: 900px;
+}
+
+.icon {
+   width: 55px;
+   height: 50px;
+   position: relative;
+   cursor: pointer;
+   margin-top: 35px;
+   margin-left: 20px;
+   border: none;
+   transform: 0.2s;
+   border-radius: 0px;
+}
+
+
+
+.icon:hover {
+   background-color: rgb(74, 74, 74);
+   border: 1px solid rgb(140, 140, 140);
+   border-radius: 5px;
+}
+.gicon_bg{
+   background: rgba(37, 37, 37, 0.849);
+   padding: 5px;
+   border-top-left-radius: 20px;
+}
+
+
+.gicon {
+   width: 100px;
+   height: 100px;
+   border-radius: 100px;
+}
+
+h1 {
+   text-align: center;
+}
+
+.box1{
+   background: rgba(70, 70, 70, 0.747);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+.informathion{
+   background: rgba(10, 6, 19, 0.74);
+   padding: 5px;
+   margin-top: -1px;
+}
+
+.video_box{
+   padding-left: 5px;
+}
+
+.vsa{
+   margin-top: -18px;
+}
+
+.icon2{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   cursor: pointer;
+   margin-top: 5px;
+   margin-left: 20px;
+   border: none;
+   transform: 0.2s;
+   border-radius: 0px;
+}
+.social{
+   margin-top: 700px;
+   background: rgba(0, 0, 0, 0.377);
+   width: 110px;
+   height: 200px;
+   border-bottom-left-radius: 20px;
+}
+.social_text{
+   position: relative;
+   margin-left: 27px;
+   margin-bottom: 15px;
+   color: rgb(116, 116, 116);
+}
+
+.icon2:hover {
+   background-color: rgb(74, 74, 74);
+   border: 1px solid rgb(140, 140, 140);
+   border-radius: 5px;
+}
+
+.music_list{
+   margin-right: 35%;
+   color: rgb(141, 140, 140);
+   background: rgba(0, 0, 0, 0.212);
+   padding: 20px;
+}
+
+.trek1{
+   background: rgba(0, 0, 0, 0.377);
+   padding: 5px;
+   border-radius: 10px;
+   margin-top: 10px;
+   position: relative;
+}
+
+.trek2{
+   background: rgba(0, 0, 0, 0.377);
+   padding: 5px;
+   border-radius: 10px;
+   margin-top: 10px;
+   position: relative;
+}
+
+.trek2_icon{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   right: 10px;
+   bottom: 50px;
+}
+
+.trek1_icon{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   right: 10px;
+   bottom: 50px;
+}
+
+.video_list{
+   margin-right: 30%;
+   color: rgb(141, 140, 140);
+   background: rgba(0, 0, 0, 0.212);
+   padding: 20px;
+}
+
+.videolist{
+   width: 450px;
+}
+
+.page3_name{
+   background: rgba(41, 41, 41, 0.445);
+}
+
+.trek3{
+   background: rgba(0, 0, 0, 0.377);
+   padding: 5px;
+   border-radius: 10px;
+   margin-top: 10px;
+   position: relative;
+}
+
+.trek3_icon{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   right: 10px;
+   bottom: 50px;
+}
