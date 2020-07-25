@@ -1,14 +1,3 @@
-asgiref
-certifi
-chardet
-Django
-idna
-pip
-pkg-resources
-pytz
-requests
-setuptools
-sqlparse
-urllib3
-uWSGI
-
+pip>=20.1.1
+Django>=3.0.8
+requests>=2.24.0
