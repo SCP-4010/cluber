@@ -1,0 +1,14 @@
+asgiref
+certifi
+chardet
+Django
+idna
+pip
+pkg-resources
+pytz
+requests
+setuptools
+sqlparse
+urllib3
+uWSGI
+
