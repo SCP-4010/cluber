@@ -1,11 +1,11 @@
 @font-face {
    font-family: 'oswald-medium';
-   src: url('/static/fonts/Oswald-Medium.ttf')
+   src: url('/static/cluberapp/fonts/Oswald-Medium.ttf')
 }
 
 body {
    font-family: 'oswald-medium';
-   background: url('/static/images/bggeneral.jpg');
+   background: url('/static/cluberapp/images/bggeneral.jpg');
 
    background-size: cover;
    background-repeat: repeat;
