@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=wsj0ifvo4986i6iz%_bfmvblk)dp-1lj2-i8h#)b8m0awjv9o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.ngrok.io', '.pythonanywhere.com']
 

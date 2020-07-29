@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Music, Video
+from .models import Album, Music, Video
 from .parser import urls_of_vids
 
 # Create your views here.
@@ -13,7 +13,8 @@ def index(request):
 
 def music(request):
     context = {
-        'music': Music.objects.all(),
+        'albums': Album.objects.all(),
+        'music': Music.objects.all().order_by('album'),
     }
     return render(request, 'cluberapp/music.html', context)
 

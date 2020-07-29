@@ -1,52 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>
-        Cluber Blue music
-    </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    
-
+    <title>Cluber Blue music</title>
+    <link rel="icon" href="{% static 'cluberapp/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'cluberapp/css/style.css' %}" >
+</head>
 <body>
-
     <div class="box">
-
         <div class="box1">
             <div class="gicon_bg">
-                <img src="images/icons.jpg" class="gicon">
+                <img src="{% static 'cluberapp/images/icons.jpg' %}" class="gicon">
             </div>
             <div class="button1">
-                <a href="main.html"><img src="images/EX_icon.png" class="icon"></a>
-
+                <a href="{% url 'cluberapp:index' %}"><img src="{% static 'cluberapp/images/EX_icon.png' %}" class="icon"></a>
             </div>
-
-
-
         </div>
         <div class="video_list">
             <div>
                 <h1 class="page3_name">video</h1>
             </div>
-            <div>
-                <h3>Humility</h3>
-                <video src="video/-Humility.mp4" controls class="videolist"></video>
-            </div>
-            <div>
-                <h3>Hope</h3>
-                <video src="video/-Hope.mp4" controls class="videolist"></video>
-            </div>
-            <div>
-                <h3>RAGE</h3>
-                <video src="video/RAGE.MOV" controls class="videolist"></video>
-            </div>
+            {% for vid in video %}
+                <div>
+                    <h3>{{ vid.properties.name }}</h3>
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/{{ vid.url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            {% endfor %}
     </div>
     </div>
-
-
-
 </body>
-
 </html>

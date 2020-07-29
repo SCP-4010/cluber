@@ -23,13 +23,17 @@
                 <h1>Music</h1>
             </div>
             <div>
-                {% for track in music %}
-                    <h3>{{ track.album }}</h3>
-                    <div class="trek1">
-                        <img src="/media/{{ track.icon }}" class="trek1_icon">
-                        <h3>{{ track.name }}</h3>
-                        <audio controls src="/media/{{ track.mp3 }}"></audio>
-                    </div>
+                {% for album in albums %}
+                    {{ album.name }}
+                    {% for track in music %}
+                        {% if track.album.name ==  album.name %}
+                        <div class="trek1">
+                            <img src="/media/{{ album.icon }}" class="trek1_icon">
+                            <h3>{{ track.name }}</h3>
+                            <audio controls src="/media/{{ track.mp3 }}"></audio>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
             </div>
         </div>
