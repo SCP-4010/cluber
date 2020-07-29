@@ -6,3 +6,4 @@ db.sqlite3
 myvenv
 .DS_Store
 test.py
+.env
